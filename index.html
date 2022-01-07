@@ -126,9 +126,8 @@
 			//Rebound handring
 			//Evaluate ball postion on the ground.
 			if (ball.position.y < 0.5) {
-				//In this dummy code, stop the ball on the ground.
-				//Ideally, give rebound speed usind RoE and current spped.
-				ball_velocity.y = 0.0;
+				ball.position.y -= ball_velocity.y * delta;
+				ball_velocity.y *= -1.0 * RoE;
 			}
 
 			//Output current lasped time and position on Javascript console
