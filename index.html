@@ -76,7 +76,7 @@
 		//Make sphere object
 		var ballGeometry = new THREE.SphereGeometry(BALL_RADIUS, 64, 64);
 		//Make material of the object
-		var ballMaterial = new THREE.MeshPhongMaterial({ color: 0x156289, emissive: 0x072534, side: THREE.DoubleSide, flatShading: true });
+		var ballMaterial = new THREE.MeshPhongMaterial({ color: 0x456789, emissive: 0x972534, side: THREE.DoubleSide, flatShading: true });
 		//Generate ball object
 		var ball = new THREE.Mesh(ballGeometry, ballMaterial);
 		//Define position of the ball only Y
@@ -90,7 +90,7 @@
 		//Make cubic object that is 20m x GROUND_THICKNESS m x 25 m
 		var cubeGeometry = new THREE.CubeGeometry(20, GROUND_THICKNESS, 25);
 		//Make material of the object
-		var cubeMaterial = new THREE.MeshLambertMaterial({ color: 0x666666 })
+		var cubeMaterial = new THREE.MeshLambertMaterial({ color: 0x216666, emissive: 0x243214 })
 		//Generate ground object
 		var ground = new THREE.Mesh(cubeGeometry, cubeMaterial);
 		//Define position of the grand at the origine
